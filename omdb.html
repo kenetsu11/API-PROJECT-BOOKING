@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+    <title>OMDB</title>
+</head>
+<body>
+    <!--------Navigation-------->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+            <a class="navbar-brand" href="#"><img class="w-25" src="image/logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active"></li>
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Movies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Language</a>
+                 </li>
+              </ul>
+              
+                <input id="movieInput" class="form-control mr-sm-2" type="text" placeholder="Enter Movie" aria-label="Search">
+                <button id="searchData" class="btn btn-outline-success my-2 my-sm-0 bg-success text-white" type="text">Search</button>
+              
+            </div>
+          </nav>
+          
+     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                        <iframe class="w-100" height="400" src="http://www.youtube.com/embed/b3SHqoMDSGg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                  <div class="carousel-item">
+                        <iframe class="w-100" height="400" src="https://www.youtube.com/embed/tQ0mzXRk-oM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                  <div class="carousel-item">
+                        <iframe class="w-100" height="400" src="https://www.youtube.com/embed/P94M4jlrytQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+
+              <div class="d-flex justify-content-center m-5">
+                <button onclick="location.href='booking.html';" style="height: 50px;" type="text" class="text-white bg-success w-75 rounded-circle btn-block">Click To Book Your Seat</button>
+              </div>
+              
+              
+              <p class="font-weight-bold m-5">Recommended Movies</p>
+              <div class="d-flex justify-content-around">
+                    <div class="card" style="width: 18rem;">
+                            <img src="image/card1.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">"Pirates of the Caribbean…urse of the Black Pearl"</h5>
+                              
+                              
+                            </div>
+                          </div>
+
+                          <div class="card" style="width: 18rem;">
+                                <img src="image/card2.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">"The Amazing Spider-Man"</h5>
+                                  
+                                  
+                                </div>
+                              </div>
+
+                              <div class="card" style="width: 18rem;">
+                                    <img src="image/card3.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">"Captain Marvel"</h5>
+                                      
+                                    </div>
+                                  </div>
+
+                                  <div class="card" style="width: 18rem;">
+                                        <img src="image/card5.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">"Wrong Turn 5: Bloodlines"</h5>
+                                        </div>
+                                      </div>
+
+                                      <div class="card" style="width: 18rem;">
+                                            <img src="image/card4.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                              <h5 class="card-title">"Deadpool 2"</h5>
+                                              
+                                            </div>
+                                          </div>
+
+                                          <div class="card" style="width: 18rem;">
+                            <img src="image/card6.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">"Terminator Genisys"</h5>
+                            </div>
+                          </div>
+
+                          
+              </div>
+              <hr>
+<!--------------------------------New Arrival Section--------------------------------------->
+              <p class="font-weight-bold m-5">New Arrivals Movies</p>
+              <div class="d-flex justify-content-around">
+                    <div class="card" style="width: 18rem;">
+                            <img src="image/card7.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">"Fast & Furious 6"</h5>
+                              
+                            </div>
+                          </div>
+
+                          <div class="card" style="width: 18rem;">
+                                <img src="image/card8.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">	"Catch-22"</h5>
+                                  
+                                </div>
+                              </div>
+
+                              <div class="card" style="width: 18rem;">
+                                    <img src="image/card9.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">"You Don't Know Jack"</h5>
+                                      
+                                    </div>
+                                  </div>
+
+                                  <div class="card" style="width: 18rem;">
+                                        <img src="image/card10.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                          <h5 class="card-title">"Tel Aviv on Fire"</h5>
+                                          
+                                        </div>
+                                      </div>
+
+                                      <div class="card" style="width: 18rem;">
+                                            <img src="image/card11.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                              <h5 class="card-title">	"The Kings of Summer"</h5>
+                                             
+                                            </div>
+                                          </div>
+
+                                          <div class="card" style="width: 18rem;">
+                            <img src="image/card12.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">"The Hunger Games: Catching Fire"</h5>
+                              
+                            </div>
+                          </div>
+              </div>
+              <hr>
+
+              <!-------------------------------------Most Popular Section------------------------------------->
+              <p class="font-weight-bold m-5">Most Popular</p>
+              <div class="d-flex justify-content-around">
+                    <div class="card" style="width: 18rem;">
+                            <img src="image/card13.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">"Annabelle Comes Home"</h5>
+                              
+                            </div>
+                          </div>
+
+                          <div class="card" style="width: 18rem;">
+                                <img src="image/card14.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">	"The Conjuring 2"</h5>
+                                  
+                                </div>
+                              </div>
+
+                              <div class="card" style="width: 18rem;">
+                                    <img src="image/card15.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">"Interstellar"</h5>
+                                     
+                                    </div>
+                                  </div>
+
+                                  <div class="card" style="width: 18rem;">
+                                        <img src="image/card16.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                          <h5 class="card-title">"The Orphan Killer"</h5>
+                                          
+                                        </div>
+                                      </div>
+
+                                      <div class="card" style="width: 18rem;">
+                                            <img src="image/card17.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                              <h5 class="card-title">"Titanic"</h5>
+                                             
+                                            </div>
+                                          </div>
+
+                                          <div class="card" style="width: 18rem;">
+                            <img src="image/card18.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">"The Incredible Hulk"</h5>
+                              a>
+                            </div>
+                          </div>
+              </div>
+              <hr>
+<!------------------------------------------------Footer------------------------------------------------------------->
+
+              <div style="height: 300px;" class="bg-dark w-100 text-white d-flex">
+                <div class="">
+                    <img style="height: 50px" class="w-25" src="image/p1.jpeg" alt="">
+                    <img style="height: 50px" class="w-25" src="image/a1.png" alt="">
+                </div>
+                <div class="col-5 m-5">
+                    <p>2019 @ Copyright OMDB</p>
+                    <div class="m-5">
+                      <p>Privacy Properties</p>
+                      <p >Terms & Conditions</p>
+                    </div>
+                    
+                </div>
+                <div >
+                    <h2>More about OMDB</h2>
+                    <h5>call 0224578155</h5>
+                </div>
+
+              </div>
+    <script>
+        
+        var clickableButton = document.getElementById('searchData');
+        clickableButton.addEventListener('click' , function () {
+            var getUser = document.getElementById('movieInput').value;
+            
+            $.ajax({
+            url: 'http://www.omdbapi.com/?s=' + getUser + '&apikey=f15d1a62',
+        })
+        .done(function (data) {
+          for(var i = 0; i < data.totalResults; i++) {
+            console.log(data.Search[i].Title)
+            console.log(data.Search[i].Poster)
+          }
+          
+           
+
+            
+        })
+        })
+
+
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        /* body {
+            background-image: url("image/p1.png")
+        } */
+    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Payment Redirect</title>
+</head>
+<body onload="paymentRedirectPage()">
+    <div class="d-flex justify-content-around">
+        <div class="m-5" id="show"></div>
+        <div>
+            <p class="h2 text-primary m-5">Screen This Way</p>
+            <form id="getSeatNumber">
+                <input type="checkbox" name="" value="A1"><label>A1</label>
+                <input type="checkbox" name="" value="A2"><label>A2</label>
+                <input type="checkbox" name="" value="A3"><label>A3</label>
+                <input type="checkbox" name="" value="A4"><label>A4</label>
+                <input type="checkbox" name="" value="A5"><label>A5</label>
+                <input type="checkbox" name="" value="A6"><label>A6</label>
+                <input type="checkbox" name="" value="A7"><label>A7</label>
+                <input type="checkbox" name="" value="A8"><label>A8</label><br><br>
+                <input type="checkbox" name="" value="B1"><label>B1</label>
+                <input type="checkbox" name="" value="B2"><label>B2</label>
+                <input type="checkbox" name="" value="B3"><label>B3</label>
+                <input type="checkbox" name="" value="B4"><label>B4</label>
+                <input type="checkbox" name="" value="B5"><label>B5</label>
+                <input type="checkbox" name="" value="B6"><label>B6</label>
+                <input type="checkbox" name="" value="B7"><label>B7</label>
+                <input type="checkbox" name="" value="B8"><label>B8</label><br><br>
+                <input type="checkbox" name="" value="C1"><label>C1</label>
+                <input type="checkbox" name="" value="C2"><label>C2</label>
+                <input type="checkbox" name="" value="C3"><label>C3</label>
+                <input type="checkbox" name="" value="C4"><label>C4</label>
+                <input type="checkbox" name="" value="C5"><label>C5</label>
+                <input type="checkbox" name="" value="C6"><label>C6</label>
+                <input type="checkbox" name="" value="C7"><label>C7</label>
+                <input type="checkbox" name="" value="C8"><label>C8</label><br><br>
+                <input type="checkbox" name="" value="D1"><label>D1</label>
+                <input type="checkbox" name="" value="D2"><label>D2</label>
+                <input type="checkbox" name="" value="D3"><label>D3</label>
+                <input type="checkbox" name="" value="D4"><label>D4</label>
+                <input type="checkbox" name="" value="D5"><label>D5</label>
+                <input type="checkbox" name="" value="D6"><label>D6</label>
+                <input type="checkbox" name="" value="D7"><label>D7</label>
+                <input type="checkbox" name="" value="D8"><label>D8</label><br><br>
+                
+            </form>
+        </div>
+        
+    </div>
+    <div id="checkType"></div>
+
+    <button style="margin-left: 600px" class="text-white bg-success btn" id="getRecipt" onclick="alert('Successfully booked'); window.location.href='booking.html';" type="submit">Book Ticket</button>
+
+
+    
+    
+</body>
+<script src="booking.js">
+</script>
+</html>

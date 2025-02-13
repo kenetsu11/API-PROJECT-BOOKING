@@ -1,0 +1,196 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(90deg, #242428 0%, #096e79 35%, #00d4ff 100%);
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Search Section */
+.search-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#movie-title {
+    width: 60%;
+    padding: 10px;
+    font-size: 18px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background: linear-gradient(0deg, #22c1c3 0%, #fdbb2d 100%);
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+button:hover {
+    opacity: 0.8;
+}
+
+/* Movie Cards */
+#movie-results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.movie-card {
+    width: 200px;
+    margin: 10px;
+    border: 1px solid #ab2a2a;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.movie-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.movie-card h3 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.card-price {
+    font-size: 16px;
+    color: #ffd700;
+    font-weight: bold;
+}
+
+.pg-logo {
+    width: 30px;
+    margin-top: 10px;
+}
+
+/* Movie Categories */
+.container {
+    width: 90%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.card {
+    background: #1e1e1e;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.custom-btn {
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(0deg, #22c1c3 0%, #fdbb2d 100%);
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.custom-btn:hover {
+    opacity: 0.8;
+}
+
+/* Map Section */
+.map-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 10px;
+    background: #000;
+    border: 2px solid red;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 95%;
+    margin: 30px auto;
+}
+
+.map-container iframe {
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar */
+.navbar {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-list-item {
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+.menu-list-item:hover {
+    color: #fdbb2d;
+}
+
+/* Sidebar */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 50px;
+    left: 10px;
+}
+
+.left-menu-icon {
+    font-size: 24px;
+    color: white;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.left-menu-icon:hover {
+    color: #fdbb2d;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #movie-title {
+        width: 80%;
+    }
+    
+    .d-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}

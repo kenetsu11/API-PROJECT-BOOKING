@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <title>Booking Ticket</title>
+  </head>
+ 
+    <div class="search-container">
+      <h1><a href="booking.html">Search Movies</a></h1>
+      <input type="text" id="movie-title" placeholder="Enter movie title" />
+      <button onclick="searchMovies()">Search</button>
+    </div>
+
+    <div id="movie-results"></div>
+
+
+    <p class="font-weight-bold m-5 h1 text-white">New In Theater</p>
+    <div class="d-flex justify-content-around">
+      <div class="card" style="width: 18rem">
+        <img src="image/PIC 1.jpg" class="card-img-top" alt="..." />
+        <button onclick="location.href='details.html';" class="btn custom-btn">
+          Click To Book
+        </button>
+        <div class="card-body">
+          <h5 class="card-title">Wicked</h5>
+          <p class="card-price">Price: 450</p>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/MTRCB_PG.png/800px-MTRCB_PG.png?20201216151128"
+            alt="PG Logo"
+            class="pg-logo"
+          />
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img src="image/PIC 2.jpg" class="card-img-top" alt="..." />
+        <button onclick="location.href='details.html';" class="btn custom-btn">
+          Click To Book
+        </button>
+        <div class="card-body">
+          <h5 class="card-title">Venom: The Last Dance</h5>
+          <p class="card-price">Price: 450</p>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/MTRCB_PG.png/800px-MTRCB_PG.png?20201216151128"
+            alt="PG Logo"
+            class="pg-logo"
+          />
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img src="image/PIC 3.jpg" class="card-img-top" alt="..." />
+        <button onclick="location.href='details.html';" class="btn custom-btn">
+          Click To Book
+        </button>
+        <div class="card-body">
+          <h5 class="card-title">The Platform 2</h5>
+          <p class="card-price">Price: 450</p>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/MTRCB_PG.png/800px-MTRCB_PG.png?20201216151128"
+            alt="PG Logo"
+            class="pg-logo"
+          />
+        </div>
+      </div>
+    </div>
+    <hr />
+
+    <p class="font-weight-bold m-5 h1 text-white">New Kids Sections</p>
+    <div class="d-flex justify-content-around">
+      <div class="card" style="width: 18rem">
+        <img src="image/PIC 4.jpg" class="card-img-top" alt="..." />
+        <button onclick="location.href='details.html';" class="btn custom-btn">
+          Click To Book
+        </button>
+        <div class="card-body">
+          <h5 class="card-title">Moana 2</h5>
+          <p class="card-price">Price: 450</p>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/MTRCB_PG.png/800px-MTRCB_PG.png?20201216151128"
+            alt="PG Logo"
+            class="pg-logo"
+          />
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img src="image/PIC 5.jpg" class="card-img-top" alt="..." />
+        <button onclick="location.href='details.html';" class="btn custom-btn">
+          Click To Book
+        </button>
+        <div class="card-body">
+          <h5 class="card-title">Mufasa The Lion King</h5>
+          <p class="card-price">Price: 450</p>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/MTRCB_PG.png/800px-MTRCB_PG.png?20201216151128"
+            alt="PG Logo"
+            class="pg-logo"
+          />
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img src="image/PIC 6.jpg" class="card-img-top" alt="..." />
+        <button onclick="location.href='details.html';" class="btn custom-btn">
+          Click To Book
+        </button>
+        <div class="card-body">
+          <h5 class="card-title">Inside Out 2</h5>
+          <p class="card-price">Price: 450</p>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/MTRCB_PG.png/800px-MTRCB_PG.png?20201216151128"
+            alt="PG Logo"
+            class="pg-logo"
+          />
+        </div>
+      </div>
+    </div>
+    <hr />
+
+    <p class="font-weight-bold m-5 h1 text-white">Horror Movies</p>
+    <div class="d-flex justify-content-around">
+      <div class="card" style="width: 18rem">
+        <img src="image/PIC 7.jpg" class="card-img-top" alt="..." />
+        <button onclick="location.href='details.html';" class="btn custom-btn">
+          Click To Book
+        </button>
+        <div class="card-body">
+          <h5 class="card-title">OutSide</h5>
+          <p class="card-price">Price: 450</p>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/MTRCB_PG.png/800px-MTRCB_PG.png?20201216151128"
+            alt="PG Logo"
+            class="pg-logo"
+          />
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img src="image/PIC 8.jpg" class="card-img-top" alt="..." />
+        <button onclick="location.href='details.html';" class="btn custom-btn">
+          Click To Book
+        </button>
+        <div class="card-body">
+          <h5 class="card-title">T A R O T</h5>
+          <p class="card-price">Price: 450</p>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/MTRCB_PG.png/800px-MTRCB_PG.png?20201216151128"
+            alt="PG Logo"
+            class="pg-logo"
+          />
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img src="image/PIC 9.jpg" class="card-img-top" alt="..." />
+        <button onclick="location.href='details.html';" class="btn custom-btn">
+          Click To Book
+        </button>
+        <div class="card-body">
+          <h5 class="card-title">Smile 2</h5>
+          <p class="card-price">Price: 450</p>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/MTRCB_PG.png/800px-MTRCB_PG.png?20201216151128"
+            alt="PG Logo"
+            class="pg-logo"
+          />
+        </div>
+      </div>
+    </div>
+    <hr />
+    <p class="font-weight-bold text-white text-center h4">Location: SM City Taytay</p>
+    <div class="map-container">
+      
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.5960835830047!2d121.13732957360038!3d14.565075777948435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1
+        !3m3!1m2!1s0x3397c712fb4b2a49%3A0xdebea7ccd8c3741b!2sSM%20City%20Taytay!
+        5e0!3m2!1sen!2sph!4v1739150574235!5m2!1sen!2sph"
+        width="1500"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+    <div class="social-media text-center mt-3">
+      <p class="font-weight-bold text-white h5">Follow us on Social Media</p>
+      <a href="https://facebook.com" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/2048px-2021_Facebook_icon.svg.png" alt="Facebook" width="40" height="40">
+      </a>
+      <a href="https://X.com" target="_blank">
+        <img src="https://img.freepik.com/premium-vector/x-new-social-network-black-app-icon-twitter-rebranded-as-x-twitter-s-logo-was-changed_277909-568.jpg?semt=ais_hybrid" alt="X" width="40" height="40">
+      </a>
+      <a href="https://instagram.com" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="40" height="40">
+      </a>
+    </div>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: rgb(36, 36, 40);
+        background: linear-gradient(
+          90deg,
+          rgba(36, 36, 40, 1) 0%,
+          rgba(9, 110, 121, 1) 35%,
+          rgba(0, 212, 255, 1) 100%
+        );
+        color: rgb(21, 21, 21);
+      }
+      #movie-results {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .movie-card {
+        width: 200px;
+        margin: 10px;
+        border: 1px solid #ab2a2a;
+        border-radius: 10px;
+        padding: 10px;
+        text-align: center;
+        background-color: #333;
+      }
+      .movie-card img {
+        width: 100%;
+        height: 100px; /* Fixed height for consistency */
+        object-fit: contain; /* Ensures the image covers the container */
+        border-radius: 8px; /* Optional: Apply rounded corners */
+      }
+      .movie-card h3 {
+        font-size: 16px;
+        margin: 10px 0;
+      }
+      .search-container {
+        text-align: center;
+        margin: 20px 0;
+      }
+      #movie-title {
+        width: 60%;
+        padding: 10px;
+        font-size: 18px;
+        margin-top: 10px;
+      }
+      .custom-btn {
+        background: rgb(34, 193, 195);
+        background: linear-gradient(
+          0deg,
+          rgba(34, 193, 195, 1) 0%,
+          rgba(253, 187, 45, 1) 100%
+        );
+        border: none;
+      }
+      .card-title {
+        text-align: center;
+      }
+      .card-price {
+        font-size: 16px;
+        color: black; /* Makes the price black */
+        font-weight: bold; /* Makes the price bold */
+      }
+      .pg-logo {
+        width: 30px;
+        margin-top: 10px;
+      }
+      .map-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        padding: 10px;
+        background: linear-gradient(135deg, #000, #000);
+        border: 2px solid red;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        max-width: 95%;
+        margin: 30px auto;
+      }
+      .map-container iframe {
+        border-radius: 12px;
+        border: 1px solid #ccc;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Fixed height for card images */
+      .card-img-top {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+    </style>
+
+    <script>
+      const apiKey = "7c37c022";
+
+      function searchMovies() {
+        const movieTitle = document.getElementById("movie-title").value;
+        const url = `https://www.omdbapi.com/?s=${movieTitle}&apikey=${apiKey}`;
+
+        fetch(url)
+          .then((response) => response.json())
+          .then((data) => {
+            const resultsDiv = document.getElementById("movie-results");
+            resultsDiv.innerHTML = "";
+
+            if (data.Response === "True") {
+              data.Search.forEach((movie) => {
+                const movieCard = document.createElement("div");
+                movieCard.className = "movie-card";
+
+                const moviePoster =
+                  movie.Poster !== "N/A"
+                    ? movie.Poster
+                    : "https://via.placeholder.com/200x300?text=No+Image";
+                movieCard.innerHTML = ` 
+                            <img src="${moviePoster}" alt="${movie.Title}" />
+                            <h3>${movie.Title}</h3>
+                            <p>${movie.Year}</p>
+                            <p class="card-price">Price: 350</p>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/PG_certificate.svg" alt="PG Logo" class="pg-logo"/>
+                        `;
+                resultsDiv.appendChild(movieCard);
+              });
+            } else {
+              resultsDiv.innerHTML = "<p>No movies found.</p>";
+            }
+          })
+          .catch((error) => console.error("Error fetching movie data:", error));
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      body {
+        /*background-image: url("image/bgmovies.jpg");
+            background-size: cover; */
+        background: rgb(147, 147, 147);
+        background: linear-gradient(
+          0deg,
+          rgba(147, 147, 147, 1) 0%,
+          rgba(133, 126, 114, 1) 100%
+        );
+        background-position: center;
+        color: white;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      .form-container {
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 30px;
+        border-radius: 10px;
+      }
+      .form-group {
+        margin-bottom: 15px;
+      }
+      .form-control {
+        background-color: #f8f9fa;
+        border-radius: 5px;
+        padding: 10px;
+        width: 100%;
+      }
+      .btn-success {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+      }
+      .carousel-inner img {
+        height: 600px;
+      }
+      .text-info {
+        color: white !important;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>User Details</title>
+  </head>
+  <body>
+    <div class="container">
+      <p class="h1 text-white text-center mt-5">
+        Enter Your Details To Book Your Ticket
+      </p>
+      <div class="d-flex justify-content-around mt-5">
+        <!-- Form Section -->
+        <div class="col-md-6 form-container">
+          <div class="form-group">
+            <input
+              id="inputName"
+              type="text"
+              class="form-control"
+              placeholder="Enter Your Name"
+              required
+            /><br />
+          </div>
+          <div class="form-group">
+            <input
+              id="inputEmail"
+              type="email"
+              class="form-control"
+              placeholder="Email"
+              required
+            /><br />
+          </div>
+          <div class="form-group">
+            <input
+              id="inputMobile"
+              type="text"
+              class="form-control"
+              placeholder="Mobile"
+              required
+            /><br />
+          </div>
+          <div class="form-group">
+            <input
+              id="inputSeats"
+              type="number"
+              class="form-control"
+              placeholder="Enter Number of Seats"
+              required
+            /><br />
+          </div>
+          <div class="form-group">
+            <select id="day" class="form-control">
+              <option>Today</option>
+              <option>Tomorrow</option>
+              <option>Day after Tomorrow</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <select id="showTime" class="form-control">
+              <option>Noon</option>
+              <option>Afternoon</option>
+              <option>Night</option>
+            </select>
+          </div>
+          <button id="getDataUser" onclick="getData()" class="btn btn-success">
+            Click To Proceed
+          </button>
+        </div>
+      </div>
+
+      <!-- Movies Carousel Section -->
+      <p class="h2 text-white text-center mt-5">More Movies To Watch</p>
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carouselExampleIndicators"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a
+              href="https://www.youtube.com/watch?v=0lpXPWKpSY4"
+              target="_blank"
+            >
+              <img
+                style="height: 600px"
+                class="w-100 d-block"
+                src="image/ADS 1.jpg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a
+              href="https://www.youtube.com/watch?v=m2L-Sa_6MU0"
+              target="_blank"
+            >
+              <img
+                style="height: 600px"
+                class="w-100 d-block"
+                src="image/ADS 2.jpg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a
+              href="https://www.youtube.com/watch?v=hRFY_Fesa9Q"
+              target="_blank"
+            >
+              <img
+                style="height: 600px"
+                class="w-100 d-block"
+                src="image/ADS 3.jpg"
+                alt=""
+              />
+            </a>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </body>
+  <script src="booking.js"></script>
+</html>
